@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+    php_apache:
+        build: ./docker/php_apache/
+        container_name: "${COMPOSE_PROJECT_NAME}_phpapache"
+        ports:
+            - 80:80
+        volumes:
+            - "${PROJECT_ROOT}:/var/www"
+        networks:
+            - server
+
+networks:
+    server:

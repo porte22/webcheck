@@ -1,0 +1,23 @@
+{
+    "name": "edimotive/web-check",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alessandro Conti",
+            "email": "porte22@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "3.4",
+        "symfony/console": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CheckBundle\\": "src",
+            "CheckBundle\\Test\\": "tests"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.1"
+    }
+}

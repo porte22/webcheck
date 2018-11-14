@@ -1,12 +1,21 @@
 <?php
 return [
-    'https://it.motor1.com'=> [
-        'navbar'=>
+    'https://it.motor1.com' => [
+        'navbar' =>
             [
-                'news',
-                'da sapere',
-                'prove',
-                'youtester'
-            ]
+                'urls' => [
+                    'news',
+                    'da sapere',
+                    'prove',
+                    'youtester'
+                ],
+                'method' => 'checkUrlByXPath'
+            ],
+        'category' => [
+            'urls' => [
+                'news'
+            ],
+            'method' => 'getLinkByXPath'
+        ],
     ]
 ];
